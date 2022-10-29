@@ -20,10 +20,10 @@ jobs:
     - name: List runner name
       run: echo "runner os - ${{runner.os}}"
     - name: echo my secret
-      run: echo "MY_SECRET is ${{secrets.MY_SECRET}}"
+      run: echo "MY_SECRET is ${secrets.MY_SECRET}}"
     - name: list my current directory
-      run: ls - l
+      run: ls -l
     - name: Checkot the current repo
       uses: actions/checkout@v3
     - name: List my current directory after checkout
-      run: ls-l
+      run: ls -l
